@@ -1,17 +1,26 @@
+import {Section} from './Section'
+import { Button } from './Button';
+
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        textTransform: 'uppercase',
-        color: '#010101',
+        paddingLeft: '20px',
+        fontSize: 20,
+         color: '#010101',
       }}
     >
-      React homework templateп
+      <Section title='Please leave feedback'>
+        <Button title='Good'/>
+        <Button title='Neutral'/>
+        <Button title='Bad'/>
+      </Section>
+      <Section title='Statistics'>
+        <Button title='Good'/>
+        <Button title='Neutral'/>
+        <Button title='Bad'/>
+      </Section>
     </div>
   );
 };
