@@ -1,5 +1,4 @@
-import {Section} from './Section'
-import { Button } from './Button';
+import Feedback from './Feedback'
 
 export const App = () => {
   return (
@@ -11,16 +10,7 @@ export const App = () => {
          color: '#010101',
       }}
     >
-      <Section title='Please leave feedback'>
-        <Button title='Good'/>
-        <Button title='Neutral'/>
-        <Button title='Bad'/>
-      </Section>
-      <Section title='Statistics'>
-        <Button title='Good'/>
-        <Button title='Neutral'/>
-        <Button title='Bad'/>
-      </Section>
+      <Feedback></Feedback>
     </div>
   );
 };
