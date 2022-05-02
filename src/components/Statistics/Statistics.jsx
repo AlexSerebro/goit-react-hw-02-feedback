@@ -1,5 +1,6 @@
 import { Message } from '../Message'
 import style from './Statistics.module.css'
+import PropTypes from 'prop-types';
 
 
 export const Statistics = ({
@@ -27,3 +28,11 @@ export const Statistics = ({
     </>
   )
 }
+
+Statistics.propTypes = {
+  good: PropTypes.number,
+  neutral: PropTypes.number,
+  bad: PropTypes.number,
+  totalSumFeedback: PropTypes.func,
+  totalPositiveFeedback: PropTypes.func,
+};
